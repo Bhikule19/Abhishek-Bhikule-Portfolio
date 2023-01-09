@@ -101,6 +101,26 @@ textarea {
   min-height: 10em;
 }
 
+.greeting-wrapper h1 {
+  width: 19ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: typing 2s steps(22), effect 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .intro-wrapper {
   background-color: var(--secondary-color);
   border: 1px solid var(--border-color);
