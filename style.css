@@ -21,6 +21,10 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* to give smooth transition between theme change */
 body * {
   transition: 500ms;
@@ -75,6 +79,10 @@ textarea {
   color: var(--secondary-text);
   font-family: "Roboto Mono", monospace;
 }
+
+/* section {
+  height: 100vh;
+} */
 
 .s1 {
   background-color: var(--primary-color);
@@ -174,6 +182,36 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
+
+.dots-wrapper {
+  display: flex;
+  padding: 10px;
+}
+
+#dot-1 {
+  background-color: #fc6058;
+}
+
+#dot-2 {
+  background-color: #fec02f;
+}
+
+#dot-3 {
+  background-color: #2aca3e;
+}
+
+.browser-dot {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
 .left-column {
   /* border: 1px dashed lightcoral; */
   grid-area: left-column;
@@ -203,8 +241,6 @@ textarea {
   margin: 5px;
   border: 2px solid var(--themeDotBorder);
 
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   transition: all 300ms ease;
@@ -303,6 +339,14 @@ textarea {
   background-color: var(--previewShadow);
 }
 
+#skills ul {
+  margin: 1.5rem;
+}
+
+#skills ul li {
+  margin-bottom: 1rem;
+}
+
 .social-links {
   display: grid;
   align-content: center;
@@ -337,6 +381,13 @@ textarea {
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+}
+
+.post:nth-child(2) {
+  transition-delay: 200ms;
+}
+.post:nth-child(3) {
+  transition-delay: 400ms;
 }
 
 .post .links {
@@ -405,6 +456,19 @@ textarea {
   min-height: 100px;
   font-size: 14px;
 }
+
+/* .hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 800ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+} */
 
 @media screen and (max-width: 1200px) {
   .main-container {
