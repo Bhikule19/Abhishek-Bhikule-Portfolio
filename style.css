@@ -183,7 +183,7 @@ textarea {
 #profile-pic {
   display: block;
   margin: 0 auto;
-  height: 200px;
+  height: 250px;
   width: 200px;
   object-fit: cover;
   border: 2px solid var(--border-color);
@@ -309,6 +309,19 @@ textarea {
   text-align: center;
 }
 
+.social-links img {
+  max-width: 100%;
+}
+
+.social-links .socials {
+  display: flex;
+  margin: 0 auto;
+  width: 250px;
+}
+.social-links .socials .social-icons {
+  width: 100%;
+  padding-inline: 1rem;
+}
 /* --------------------PORTFOLIO________________ */
 .post-wrapper {
   display: grid;
@@ -324,6 +337,11 @@ textarea {
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+}
+
+.post .links {
+  display: flex;
+  justify-content: space-between;
 }
 
 .thumbnail {

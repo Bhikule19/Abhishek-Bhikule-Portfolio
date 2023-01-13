@@ -5,10 +5,10 @@ function textLoader() {
     text.textContent = "Abhishek";
   }, 0);
   setTimeout(() => {
-    text.textContent = " a Front-End Developer";
+    text.textContent = " अभिषेक ";
   }, 4000);
   setTimeout(() => {
-    text.textContent = " Blogger";
+    text.textContent = "a Developer";
   }, 8000);
 }
 textLoader();
