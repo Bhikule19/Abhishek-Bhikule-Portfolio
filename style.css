@@ -436,6 +436,7 @@ textarea {
   color: #fff;
   background-color: var(--btn-color);
   border: none;
+  cursor: pointer;
 }
 
 .input-field {
